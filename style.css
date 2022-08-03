@@ -1,0 +1,111 @@
+* {
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family:'Epilogue', sans-serif;
+    background: #ece9fd;
+    padding: 6.0px 2.3px 6.6px;
+    font-size: 1.6rem;
+}
+
+main {
+    max-width: 33.0rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 800;
+    /* 40/10 = 4rem */
+    font-size: 4.0rem;
+    line-height: 4.8rem;
+    color: #090039;
+    margin-bottom: 1.5rem;
+}
+
+h1 + p {
+    color: rgba(10, 0, 57, 0.64);
+    line-height: 3.2rem;
+    margin-bottom: 3.2;
+}
+
+main p:first-child {
+    color: #7158ef;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    line-height: 3.2rem;
+    margin-bottom: 1.7rem;
+}
+
+a{
+    color: #090039;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7158ef;
+    font-weight: bold;
+}
+
+/* tirando os estilos da lista de propostas */
+ul {
+    list-style: none;
+    margin-top: 7.2rem;
+}
+
+ul li {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: #090039;
+    /* fala para a página que o maximo que precisa chegar é esse tamanho,
+     mais que isso não precisa chegar */
+    max-width: 25.7rem;
+    display: flex;
+    gap: 3.8rem;
+}
+
+ul li + li {
+    margin-top: 3.2rem;       
+}
+
+ul li span {
+    font-weight: 800;
+    font-size: 7.2rem;
+    line-height: 8.0rem;
+    letter-spacing: -2px;
+
+    /* cor do texto */
+    color: #090039;
+}
+
+/* alterações para desktop */
+/* media queries */
+@media (min-width: 700px){
+    body {
+        padding-top: 8rem;
+    }
+
+    main{
+        max-width: 1020px;
+        display: flex;
+        gap: 15rem;
+    }
+
+    main > div {
+        max-width: 484px;
+    }
+
+    ul li {
+        gap: 5.3rem;
+        max-width: 450px;
+        align-items: center;
+    }
+
+}
